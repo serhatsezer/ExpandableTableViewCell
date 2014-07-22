@@ -21,6 +21,8 @@
 		0A447253197F109C00980E4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A447235197F109B00980E4D /* UIKit.framework */; };
 		0A44725B197F109C00980E4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A447259197F109C00980E4D /* InfoPlist.strings */; };
 		0A44725D197F109C00980E4D /* ExpandableTableViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44725C197F109C00980E4D /* ExpandableTableViewCellTests.m */; };
+		0A44726A197F165A00980E4D /* ExpandableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A447268197F165A00980E4D /* ExpandableCell.m */; };
+		0A44726B197F165A00980E4D /* ExpandableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A447269197F165A00980E4D /* ExpandableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		0A447258197F109C00980E4D /* ExpandableTableViewCellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExpandableTableViewCellTests-Info.plist"; sourceTree = "<group>"; };
 		0A44725A197F109C00980E4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A44725C197F109C00980E4D /* ExpandableTableViewCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandableTableViewCellTests.m; sourceTree = "<group>"; };
+		0A447267197F165A00980E4D /* ExpandableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableCell.h; sourceTree = "<group>"; };
+		0A447268197F165A00980E4D /* ExpandableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandableCell.m; sourceTree = "<group>"; };
+		0A447269197F165A00980E4D /* ExpandableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +117,7 @@
 		0A447237197F109B00980E4D /* ExpandableTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				0A447266197F164100980E4D /* cell */,
 				0A447240197F109B00980E4D /* AppDelegate.h */,
 				0A447241197F109C00980E4D /* AppDelegate.m */,
 				0A447243197F109C00980E4D /* Main.storyboard */,
@@ -150,6 +156,16 @@
 				0A447259197F109C00980E4D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A447266197F164100980E4D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				0A447267197F165A00980E4D /* ExpandableCell.h */,
+				0A447268197F165A00980E4D /* ExpandableCell.m */,
+				0A447269197F165A00980E4D /* ExpandableCell.xib */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +247,7 @@
 				0A44724A197F109C00980E4D /* Images.xcassets in Resources */,
 				0A44723C197F109B00980E4D /* InfoPlist.strings in Resources */,
 				0A447245197F109C00980E4D /* Main.storyboard in Resources */,
+				0A44726B197F165A00980E4D /* ExpandableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +269,7 @@
 				0A447248197F109C00980E4D /* ViewController.m in Sources */,
 				0A447242197F109C00980E4D /* AppDelegate.m in Sources */,
 				0A44723E197F109B00980E4D /* main.m in Sources */,
+				0A44726A197F165A00980E4D /* ExpandableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

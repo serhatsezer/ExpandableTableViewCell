@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property (assign) NSInteger selectedIndex;
+@property (nonatomic,strong) NSMutableArray *titles;
+@property (nonatomic,strong) NSArray *subtitles;
+@property (nonatomic,strong) NSArray *texts;
+@property (nonatomic,strong) IBOutlet UITableView *tableView;
 
 @end
